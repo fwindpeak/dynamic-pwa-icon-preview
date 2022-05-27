@@ -4,7 +4,7 @@ const pwaFilePath = '/pwa-512x512.png'
 
 <template>
   <div>
-    <div>
+    <div text-4xl>
       动态PWA图标测试
     </div>
 
@@ -12,10 +12,10 @@ const pwaFilePath = '/pwa-512x512.png'
       <img :src="pwaFilePath" w-256px h-256px>
     </div>
 
-    <div>
+    <div flex justify-center>
       <form action="/upload" method="post" enctype="multipart/form-data">
         选择文件 : <input type="file" name="file">
-        <input type="submit" value="点击上传" btn>
+        <input type="submit" value="点击上传" btn block my-4>
       </form>
     </div>
 
